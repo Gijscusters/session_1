@@ -48,4 +48,20 @@ sleep %>%
              colour = factor(Subject))) +
   geom_smooth(show.legend = FALSE, se = FALSE) +
   scale_x_continuous(breaks = seq(0, 8, by = 2))
-````
+```
+
+
+``` {r}
+library(ggplot2)
+diamonds
+
+g <- ggplot(mpg, aes(x = displ, y = hwy))
+g + geom_point()
+g + geom_jitter(width = .4,height = .4)
+
+mtcars
+h <- ggplot(mtcars, aes(x=wt,y=qsec,colour=hp))
+h + geom_point()
+
+```
+
